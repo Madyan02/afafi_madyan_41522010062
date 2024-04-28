@@ -5,4 +5,5 @@
     <color name="black">#FF000000</color>
     <color name="blue">#1A529D</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#4D4D4D</color>
 </resources>

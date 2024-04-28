@@ -6,6 +6,7 @@
         <item name="colorAccent">@color/blue</item>
         <item name="colorAccent">@color/white</item>
         <item name="colorAccent">@color/black</item>
+        <item name="colorAccent">@color/grey</item>
     </style>
 
     <style name="Theme.Aqua" parent="Base.Theme.Aqua" />
