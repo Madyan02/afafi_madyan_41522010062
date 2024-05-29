@@ -42,7 +42,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Register"
-                    android:textColor="@color/grey"
+                    android:textColor="@color/black_parah"
                     android:textSize="25sp"
                     android:fontFamily="@font/montserratsemibold"
                     android:gravity="center_horizontal"/>
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:text="Nama Lengkap"
             android:fontFamily="@font/montserratmedium"
-            android:textColor="@color/grey"
+            android:textColor="@color/black_parah"
             android:textSize="15sp"
             android:layout_marginTop="25dp"/>
         <com.google.android.material.textfield.TextInputLayout
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:text="Email"
             android:fontFamily="@font/montserratmedium"
-            android:textColor="@color/grey"
+            android:textColor="@color/black_parah"
             android:textSize="15sp"
             android:layout_marginTop="10dp"/>
         <com.google.android.material.textfield.TextInputLayout
@@ -107,7 +107,7 @@
             android:layout_height="wrap_content"
             android:text="Kata Sandi"
             android:fontFamily="@font/montserratmedium"
-            android:textColor="@color/grey"
+            android:textColor="@color/black_parah"
             android:textSize="15sp"
             android:layout_marginTop="10dp"/>
 
@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:text="Konfirmasi Kata Sandi"
             android:fontFamily="@font/montserratmedium"
-            android:textColor="@color/grey"
+            android:textColor="@color/black_parah"
             android:textSize="15sp"
             android:layout_marginTop="10dp"/>
 

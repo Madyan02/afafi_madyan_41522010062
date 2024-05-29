@@ -110,6 +110,7 @@
                         android:layout_height="214dp"
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="10dp"
+                        android:onClick="scanbtl"
                         android:layout_toRightOf="@id/oip_4_1"
                         android:background="@drawable/corosel_2">
 
@@ -177,7 +178,9 @@
                 android:layout_height="258dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
                 android:layout_marginLeft="31dp"
+                android:layout_marginRight="31dp"
                 android:layout_marginTop="464dp"
                 android:background="@drawable/nav4"
                 android:elevation="10dp">
@@ -211,90 +214,14 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/group_379"
-                android:layout_width="175dp"
-                android:layout_height="211dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="224dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="774dp"
-                android:background="@drawable/event_2">
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="28dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="97dp"
-                    android:layout_marginBottom="123dp"
-                    android:background="@drawable/plus_min" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/group_378"
-                android:layout_width="175dp"
-                android:layout_height="211dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="31dp"
-                android:layout_marginTop="774dp"
-                android:background="@drawable/event_1">
-
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="28dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="97dp"
-                    android:layout_marginBottom="123dp"
-                    android:background="@drawable/plus_min" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/group_380"
-                android:layout_width="175dp"
-                android:layout_height="211dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="31dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="1004dp"
-                android:background="@drawable/event_3">
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="28dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="97dp"
-                    android:layout_marginBottom="123dp"
-                    android:background="@drawable/plus_min" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/group_381"
-                android:layout_width="175dp"
-                android:layout_height="211dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="224dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="1004dp"
-                android:background="@drawable/event_4">
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="28dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="97dp"
-                    android:layout_marginBottom="123dp"
-                    android:background="@drawable/plus_min" />
-            </RelativeLayout>
-
-            <RelativeLayout
                 android:id="@+id/frame_3668"
                 android:layout_width="368dp"
                 android:layout_height="122dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
                 android:layout_marginLeft="31dp"
+                android:layout_marginRight="31dp"
                 android:layout_marginTop="1297dp"
                 android:background="@drawable/gift"
                 android:clipToOutline="true"
@@ -336,6 +263,86 @@
                 android:lineSpacingExtra="8sp"
                 android:gravity="center_vertical"
                 />
+            <RelativeLayout
+                android:id="@+id/w1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vaganza_fie"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:id="@+id/redeemvaganza"
+                    android:layout_width="380dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="reedem"
+                    android:background="@drawable/redeemvaganza">
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pengguna_aplikasi_bisa_melakukan_penukaran_nmandiri_untuk_mendapatkan_hadiah"
+                        android:fontFamily="@font/montserratbold"
+                        android:textColor="@color/sea_blue"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="55dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ektravaganza"
+                    android:layout_below="@id/redeemvaganza"
+                    android:layout_width="380dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:onClick="extra"
+                    android:background="@drawable/ekstravaganza">
+
+                    <TextView
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pengguna_aplikasi_dapat_memenangkan_nundian_hadiah_secara_reguler"
+                        android:fontFamily="@font/montserratbold"
+                        android:textSize="13dp"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginLeft="27dp"
+                        android:textColor="@color/sea_blue"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/royalvaganza"
+                    android:layout_below="@id/ektravaganza"
+                    android:layout_width="380dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:onClick="royal"
+                    android:background="@drawable/royalvaganza">
+
+                    <TextView
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pengguna_aplikasi_dapat_memenangkan_nundian_hadiah_royal_big_prize"
+                        android:fontFamily="@font/montserratbold"
+                        android:textSize="13dp"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginLeft="32dp"
+                        android:textColor="@color/sea_blue"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
 
             <TextView
                 android:id="@+id/hadiah_mena"

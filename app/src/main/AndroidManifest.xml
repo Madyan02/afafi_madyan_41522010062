@@ -11,7 +11,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Aqua"
-        tools:targetApi="31">
+        tools:targetApi="28">
+        <activity
+            android:name=".congrats2"
+            android:exported="false" />
+        <activity
+            android:name=".redeem_vaganza_katalog_page"
+            android:exported="false" />
+        <activity
+            android:name=".activity_extravaganza"
+            android:exported="false" />
+        <activity
+            android:name=".reedem1"
+            android:exported="false" />
+        <activity
+            android:name=".scan_ktp"
+            android:exported="false" />
+        <activity
+            android:name=".scan_sucses"
+            android:exported="false" />
+        <activity
+            android:name=".scan_gagal"
+            android:exported="false" />
+        <activity
+            android:name=".scan_tutupbotolaqua"
+            android:exported="false" />
         <activity
             android:name=".HomepageActiviti"
             android:exported="false" />
@@ -33,6 +57,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CaptureAct"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme" />
     </application>
 
 </manifest>
